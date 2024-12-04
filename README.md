@@ -45,35 +45,35 @@ Arquivo .env:
 
 Crie um arquivo .env na raiz do projeto com o seguinte formato:
 makefile
-TELEGRAM_TOKEN=seu_token_aqui
-TELEGRAM_CHAT_ID=seu_chat_id_aqui
+ ```TELEGRAM_TOKEN=seu_token_aqui
+ ```TELEGRAM_CHAT_ID=seu_chat_id_aqui
 
 
 📖 Como usar
 
 Clone o repositório:
 bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+ ```git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 
 
 Configure as dependências:
 bash
-pip install -r requirements.txt
-Execute o script:
+ ```pip install -r requirements.txt
 
+Execute o script:
 bash
-python main.py
+ ```python main.py
 
 ⚙️ Estrutura do Projeto
 plaintext
 
-.
-├── main.py          # Script principal
-├── requirements.txt # Dependências do projeto
-├── .env             # Variáveis de ambiente (não commitado)
-├── S24_prices.db    # Banco de dados SQLite (gerado pelo script)
-├── README.md        # Este arquivo
+ ```.
+ ```├── main.py          # Script principal
+ ```├── requirements.txt # Dependências do projeto
+ ```├── .env             # Variáveis de ambiente (não commitado)
+ ```├── S24_prices.db    # Banco de dados SQLite (gerado pelo script)
+ ```├── README.md        # Este arquivo
 
 
 🛠️ Melhorias Futuras
