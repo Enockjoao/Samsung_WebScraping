@@ -52,6 +52,17 @@ def save_to_database(conn, data):
     new_row = pd.DataFrame([data])#converte o dicionário em um Dataframe de uma Linha
     new_row.to_sql('prices', conn, if_exists='append', index=False) # Salva no banco de dados
 
+def get_max_price(conn):
+    #Conectar com meu banco
+    cursor = conn.cursor()
+    #O preço máximo historico (SELECT max(Price).....)
+    cursor.execute("SELECT MAX(new_price), timestamp FROM prices")
+    #Retorna esse valor
+    result = cursor.fetchone()
+    return result[0], result[1]
+
+
+
 """Teste de Funções """
 if __name__ == "__main__":
     '''Configuração do Banco de Dados'''
@@ -62,6 +73,17 @@ if __name__ == "__main__":
         """Faz a requisição e parseia a Pag"""
         page_content = fetch_page()
         product_info = parse_page(page_content)
+        current_price = product_info["new_price"]
+
+        max_price, max_price_timestamp = get_max_price(conn)    
+
+
+        if current_price > max_price:
+            print("Preço maior detectado")
+            max_price = current_price
+            max_price_timestamp = product_info['timestamp']
+        else:
+            print(f"O maior preço registrado é {max_price} em {max_price_timestamp}")
 
         """Salva os dados no Banco de dados SQLite"""
         save_to_database(conn, product_info)
