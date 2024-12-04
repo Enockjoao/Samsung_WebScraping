@@ -45,55 +45,55 @@ Arquivo .env:
 
 Crie um arquivo .env na raiz do projeto com o seguinte formato:
 makefile
- ```TELEGRAM_TOKEN=seu_token_aqui```
- ```TELEGRAM_CHAT_ID=seu_chat_id_aqui```
+ `TELEGRAM_TOKEN=seu_token_aqui`
+ `TELEGRAM_CHAT_ID=seu_chat_id_aqui`
 
 
-📖 Como usar
+## 📖 Como usar
 
 Clone o repositório:
 bash
- ```git clone https://github.com/seu-usuario/seu-repositorio.git```
- ```cd seu-repositorio```
+ `git clone https://github.com/seu-usuario/seu-repositorio.git`
+ `cd seu-repositorio`
 
 
 Configure as dependências:
 bash
- ```pip install -r requirements.txt```
+ `pip install -r requirements.txt`
 
 Execute o script:
 bash
- ```python main.py```
+ `python main.py`
 
-⚙️ Estrutura do Projeto
+## ⚙️ Estrutura do Projeto
 plaintext
 
- ```.
- ```├── main.py          # Script principal```
- ```├── requirements.txt # Dependências do projeto```
- ```├── .env             # Variáveis de ambiente (não commitado)```
- ```├── S24_prices.db    # Banco de dados SQLite (gerado pelo script)```
- ```├── README.md        # Este arquivo```
+ 
+ `├── main.py          # Script principal`
+ `├── requirements.txt # Dependências do projeto`
+ `├── .env             # Variáveis de ambiente (não commitado)`
+ `├── S24_prices.db    # Banco de dados SQLite (gerado pelo script)`
+ `├── README.md        # Este arquivo`
 
 
-🛠️ Melhorias Futuras
+## 🛠️ Melhorias Futuras
 Adicionar tratamento de erros para conexões falhas ou alterações no layout do site.
 Tornar o intervalo de verificação configurável.
 Adicionar suporte para múltiplos produtos.
 Monitorar também a queda nos preços.
 
 
-📝 Observações
+## 📝 Observações
 Este projeto é destinado a fins educacionais e pessoais.
 Certifique-se de respeitar os termos de uso do Mercado Livre ao usar este scraper.
 
 
-👤 Autor
+## 👤 Autor
 Enock
 Estudante e desenvolvedor entusiasta.
 
 
-📄 Licença
+## 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
 markdown
