@@ -1,4 +1,4 @@
-já# Monitoramento de Preços do Mercado Livre
+# Monitoramento de Preços do Mercado Livre
 
 Este projeto é um **web scraper** que monitora o preço de um produto específico no Mercado Livre, armazena os dados em um banco de dados SQLite e envia notificações via Telegram quando detecta mudanças de preço significativas.
 
