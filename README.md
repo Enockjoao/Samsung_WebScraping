@@ -1,4 +1,4 @@
-# Monitoramento de Preços do Mercado Livre
+já# Monitoramento de Preços do Mercado Livre
 
 Este projeto é um **web scraper** que monitora o preço de um produto específico no Mercado Livre, armazena os dados em um banco de dados SQLite e envia notificações via Telegram quando detecta mudanças de preço significativas.
 
@@ -44,7 +44,7 @@ Obtenha o TOKEN do bot e o CHAT_ID para onde as mensagens serão enviadas.
 Arquivo .env:
 
 Crie um arquivo .env na raiz do projeto com o seguinte formato:
-makefile
+  makefile
  `TELEGRAM_TOKEN=seu_token_aqui`
  `TELEGRAM_CHAT_ID=seu_chat_id_aqui`
 
@@ -52,7 +52,7 @@ makefile
 ## 📖 Como usar
 
 Clone o repositório:
-bash
+  bash
  `git clone https://github.com/Enockjoao/Samsung_WebScraping.git`
  `cd Samsung_WebSraping`
 
@@ -62,7 +62,7 @@ Configure as dependências:
  `pip install -r requirements.txt`
 
 Execute o script:
-bash
+  bash
  `python main.py`
 
 ## ⚙️ Estrutura do Projeto
@@ -96,7 +96,6 @@ Estudante e desenvolvedor entusiasta.
 ## 📄 Licença
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-markdown
 
 
 
